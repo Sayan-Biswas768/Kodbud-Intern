@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logitech G Pro X Superlight 2 DEX | Ultimate Esports Mouse</title>
+  <meta name="description" content="Experience the Logitech G Pro X Superlight 2 DEX—Logitech's lightest, fastest wireless mouse engineered for champions.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0078d7;
+      --primary-dark: #004c8c;
+      --subtext: #8fc1ec;
+      --text: #f2f2f2;
+      --hero-bg: linear-gradient(100deg, #1a1d22 80%, #0078d744 100%);
+      --section-bg: #181b20;
+      --surface: #23262e;
+      --max-width: 1150px;
+      --shadow: 0 8px 42px #004c8c30;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Inter', Arial, Helvetica, sans-serif;
+      background: #111317;
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .page-header {
+      background: var(--hero-bg);
+      box-shadow: var(--shadow);
+      border-bottom: 2.5px solid var(--primary);
+      display: flex;
+      align-items: center;
+      padding: 34px 26px 22px 26px;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+    .g-logo-wrap {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 5;
+    }
+    .g-logo {
+      height: 62px;
+      width: 62px;
+      display: block;
+      background: transparent;
+      margin-right: 18px;
+      /* Pulse shine animation on logo */
+      animation: logopulse 2s cubic-bezier(.42,0,.58,1) infinite;
+      filter: drop-shadow(0 0 14px #36bcff52) drop-shadow(0 0 6px #0baaff30);
+      transition: filter 0.26s;
+    }
+    @keyframes logopulse {
+      0%, 100% { filter: drop-shadow(0 0 14px #36bcff52) drop-shadow(0 0 6px #0baaff30);}
+      50% { filter: drop-shadow(0 0 38px #36bcff93) drop-shadow(0 0 13px #1caaff80);}
+    }
+    .decor-glow {
+      position: absolute;
+      top: -90px; left: 60vw;
+      width: 390px; height: 390px;
+      background: radial-gradient(ellipse at center, #0094ff28 0%, #2e97de00 70%);
+      pointer-events: none;
+      z-index: 1;
+      filter: blur(14px) opacity(0.9);
+      animation: decorMove 6s linear infinite alternate;
+      border-radius: 46% 50% 55% 44%;
+    }
+    .decor-glow2 {
+      position: absolute;
+      bottom: -100px; right: 83vw;
+      width: 250px; height: 230px;
+      background: radial-gradient(ellipse at center, #00d2ff22 0%, #1a317600 71%);
+      pointer-events: none;
+      filter: blur(32px) opacity(0.7);
+      z-index: 0;
+      animation: decorMove2 7.7s ease-in-out infinite alternate;
+      border-radius: 60% 39% 51% 44%;
+    }
+    @keyframes decorMove {
+      from { transform: translateY(0) rotate(0deg) scale(1);}
+      to   { transform: translateY(65px) rotate(23deg) scale(1.13);}
+    }
+    @keyframes decorMove2 {
+      from {transform: translateY(0) rotate(-2deg) scale(1);}
+      to {transform: translateY(-45px) rotate(14deg) scale(1.18);}
+    }
+    .header-title-group h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2.7rem;
+      color: var(--primary);
+      margin: 0 0 8px 0;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .header-title-group p {
+      font-size: 1.21rem;
+      color: var(--subtext);
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.5;
+    }
+    @media (max-width: 800px) {
+      .header-title-group h1 { font-size: 1.25rem; }
+      .g-logo { height: 39px; width: 39px; }
+      .page-header { flex-direction: column; align-items: flex-start; gap: 7px; padding: 12px 6vw 7px 6vw;}
+      .header-title-group p {font-size:1rem;}
+    }
+    main { max-width: var(--max-width); margin: 0 auto; padding: 0 20px;}
+    .feature-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--section-bg);
+      box-shadow: 0 4px 24px #004c8c1b;
+      border-radius: 22px;
+      margin: 74px 0;
+      padding: 54px 38px 54px 38px;
+      gap: 50px;
+      min-height: 350px;
+      position: relative;
+    }
+    .feature-image {
+      flex: 1 1 330px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 240px;
+      max-width: 420px;
+    }
+    .feature-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 28px #004c8c30;
+      border: 2.6px solid #0078d722;
+      background: #12181f;
+      animation: imgfloat 3.8s ease-in-out infinite alternate;
+    }
+    @keyframes imgfloat {
+      0%,100% { transform: translateY(0) scale(1);}
+      50% { transform: translateY(-13px) scale(1.032);}
+    }
+    .feature-content {
+      flex: 2 1 360px;
+      max-width: 500px;
+      padding-left: 18px;
+      padding-right: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .feature-content h2 {
+      color: var(--primary);
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2rem;
+      margin: 0 0 13px 0;
+      letter-spacing: .01em;
+      font-weight: 700;
+    }
+    .feature-content p {
+      color: var(--subtext);
+      font-size: 1.13rem;
+      margin: 0;
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: .015em;
+    }
+    .comparison {
+      background: var(--surface);
+      border-radius: 12px;
+      box-shadow: 0 2px 13px #004c8c22;
+      margin: 60px auto 36px auto;
+      padding: 40px 10px;
+      max-width: 720px;
+      overflow-x: auto;
+      text-align: center;
+    }
+    .comparison table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .comparison th, .comparison td {
+      padding: 13px 18px;
+      text-align: center;
+      border-bottom: 1px solid #232f42;
+    }
+    .comparison th {
+      background: var(--primary-dark);
+      color: #fff;
+      font-size: 1.09rem;
+    }
+    .comparison tr:last-child td { border-bottom: none; }
+    .cta {
+      text-align: center;
+      padding: 64px 8px 80px 8px;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 17px 58px;
+      background: var(--primary);
+      color: #192033;
+      text-decoration: none;
+      font-size: 1.17rem;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      border-radius: 32px;
+      letter-spacing: 0.09em;
+      box-shadow: 0 3px 13px #005a9a1d;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      margin: 10px auto 0 auto;
+    }
+    .cta a:focus, .cta a:hover {
+      background: var(--primary-dark);
+      color: #fff;
+      box-shadow: 0 3px 30px #0078d744;
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+    footer {
+      color: #8fa9c9;
+      text-align: center;
+      font-size: 1rem;
+      padding: 39px 2vw 37px 2vw;
+      background: #11151c;
+      letter-spacing: 0.03em;
+    }
+    [data-aos] { opacity: 0; transition-property: opacity, transform; }
+    @media (max-width: 1100px) {
+      main { padding: 0 1vw; }
+    }
+    @media (max-width: 850px) {
+      .feature-section { flex-direction: column; gap: 18px; padding: 32px 3vw; margin: 36px 0;}
+      .feature-content { max-width: 99vw; }
+      .feature-image { max-width: 97vw; }
+      .comparison { padding: 18px 1vw; }
+    }
+    @media (max-width: 600px) {
+      .feature-section {padding:18px 1vw;}
+      .feature-content h2 {font-size:1.09rem;}
+      .feature-content { padding: 1vw;}
+      .cta a { font-size: 1rem; padding: 13px 6vw;}
+      .header-title-group p { font-size: .97rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="decor-glow"></div>
+  <div class="decor-glow2"></div>
+  <header class="page-header">
+    <div class="g-logo-wrap">
+      <!-- CUSTOM LOGO IMAGE -->
+      <img src="https://i.pinimg.com/474x/36/d4/d2/36d4d2e5d92b6f8967a9683eaf4e609f.jpg" alt="Custom Logitech G Mouse Logo" class="g-logo">
+    </div>
+    <div class="header-title-group">
+      <h1>Logitech G Pro X Superlight 2 DEX</h1>
+      <p>
+        The ultimate evolution of speed and control.<br>
+        Lighter. Faster. Trusted by champions worldwide.
+      </p>
+    </div>
+  </header>
+  <main>
+    <section class="feature-section" data-aos="fade-right">
+      <div class="feature-image">
+        <img src="https://resource.logitechg.com/content/dam/gaming/en/products/pro-x-superlight-2-dex/pro-x-superlight-2-dex-feature-01.png" alt="Feather-light design profile">
+      </div>
+      <div class="feature-content">
+        <h2>Ultra-Lightweight. Ultra-Fast.</h2>
+        <p>
+          At just <b>under 60g</b>, Superlight 2 DEX is crafted for agility and marathon endurance. PTFE feet and a perfectly balanced shell give you effortless movement and immersive comfort.
+        </p>
+      </div>
+    </section>
+    <section class="feature-section" data-aos="fade-left">
+      <div class="feature-image">
+        <img src="https://resource.logitechg.com/content/dam/gaming/en/products/pro-x-superlight-2-dex/pro-x-superlight-2-dex-feature-04.jpg" alt="Wireless gaming performance">
+      </div>
+      <div class="feature-content">
+        <h2>LIGHTSPEED Wireless, Game-Changing Response</h2>
+        <p>
+          Experience <b>2000Hz polling</b> and pro-grade LIGHTSPEED wireless—your clicks and flicks register instantly, even in the heat of competition.
+        </p>
+      </div>
+    </section>
+    <section class="feature-section" data-aos="fade-right">
+      <div class="feature-image">
+        <img src="https://resource.logitechg.com/content/dam/gaming/en/products/pro-x-superlight-2-dex/pro-x-superlight-2-dex-feature-11.jpg" alt="USB-C port HERO 2 sensor detail">
+      </div>
+      <div class="feature-content">
+        <h2>Next-Gen HERO 2 Sensor</h2>
+        <p>
+          Dominate with up to <b>32,000 DPI</b> and next-level hybrid switches. Every movement is tracked with millimeter-level accuracy—no smoothing, filtering, or acceleration.
+        </p>
+      </div>
+    </section>
+    <section class="feature-section" data-aos="fade-left">
+      <div class="feature-image">
+        <img src="https://resource.logitechg.com/content/dam/gaming/en/products/pro-x-superlight-2-dex/pro-x-superlight-2-dex-feature-09.jpg" alt="Esports setup with G Pro Superlight 2 DEX">
+      </div>
+      <div class="feature-content">
+        <h2>Designed With—and For—Champions</h2>
+        <p>
+          Built with the input of esports legends. Superlight 2 DEX fits every grip—the only limit is your ambition.
+        </p>
+      </div>
+    </section>
+    <section class="comparison" data-aos="zoom-in">
+      <h2 style="font-family:'Montserrat',Arial,sans-serif;font-size:1.2rem;color:var(--primary);margin-bottom:16px;letter-spacing:.02em;">
+        How Does It Compare?
+      </h2>
+      <table aria-label="Comparison Table">
+        <tr><th>Feature</th><th>Superlight 2 DEX</th><th>Typical Mouse</th></tr>
+        <tr><td>Weight</td><td>&lt; 60g</td><td>90–100g</td></tr>
+        <tr><td>Polling Rate</td><td>8,000Hz</td><td>1,000Hz</td></tr>
+        <tr><td>Sensor</td><td>HERO 2, 44,000 DPI</td><td>Optical, 16,000 DPI</td></tr>
+        <tr><td>Battery Life</td><td>95 hours</td><td>30–50 hours</td></tr>
+        <tr><td>Wireless Tech</td><td>LIGHTSPEED</td><td>Standard 2.4GHz</td></tr>
+      </table>
+    </section>
+    <div class="cta" data-aos="fade-up">
+      <a href="https://www.logitechg.com/en-in" target="_blank" rel="noopener">Shop Now</a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Logitech.<br>
+    Demo Landing Page by Sayan &mdash; Images and branding for showcase only.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 950, once: true, offset: 90 });
+  </script>
+</body>
+</html>
